@@ -1,1 +1,1 @@
-https://rndm-sklz.github.io/rsschool-cv-test/cv
+https://rndm-sklz.github.io/rsschool-cv/cv
