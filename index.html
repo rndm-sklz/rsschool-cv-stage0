@@ -1,12 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV#2</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <title>Gerasimov CV</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/prism_css.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list_item">
+            <a href="#about">
+              About me
+            </a>
+          </li>
+          <li class="nav__list_item">
+            <a href="#skills">
+              Skills
+            </a>
+          </li>
+          <li class="nav__list_item">
+            <a href="#code">
+              Code
+            </a>
+          </li>
+          <li class="nav__list_item">
+            <a href="#contacts">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="container__id-block" id="about">
+        <div class="avatar">
+          <img
+            class="avatar-image"
+            src="./assets/img/avatar.png"
+            alt="avatar"
+          />
+        </div>
+        <div class="container__id-block-img">
+          <h1>Andrey Gerasimov</h1>
+          <p class="container__id-block-about">
+            Hello, my name is Andrey, i'm frontend trainee from Rostov-on-Don.
+            At the moment I am independently learning JS, CSS and HTML. I look
+            forward to developing my skills from this course.
+          </p>
+        </div>
+      </section>
+      <div class="container_wrappable">
+        <section class="container__block" id="code">
+          <h2>Code</h2>
+          <pre><code class="language-js">
+      1. let container = document.createElement("div", { id: "container" });
+      2. document.body.appendChild(container);
+      3. function chessBoard(n, m) {
+      4.    let table = document.createElement("table");
+      5.    container.appendChild(table);
+      6.    for (let i = 0; i &lt; n; i++) {
+      7.      let tr = document.createElement("tr");
+      8.      table.appendChild(tr);
+      9.      for (let j = 0; j &lt; m; j++) {
+      10.       if (i % 2 === 0) {
+      11.         let td = document.createElement("td");
+      12.           j % 2 === 0
+      13.             ? td.classList.add("cell--dark")
+      14.             : td.classList.add("cell--light");
+      15.           tr.appendChild(td);
+      16.       } else {
+      17.         let td = document.createElement("td");
+      18.           j % 2 !== 0
+      19.             ? td.classList.add("cell--dark")
+      20.             : td.classList.add("cell--light");
+      21.           tr.appendChild(td);
+      22.       }
+      23.     }
+      24.   }
+      25. }
+      26.
+      27. chessBoard(6, 6);
+      </code></pre>
+          <a href="https://codepen.io/rndm-sklz/pen/OJxWapw">Link to example</a>
+        </section>
+        <div class="container_wrappable-column">
+          <section class="container__block" id="skills">
+            <h2>Skills</h2>
+            <ul class="container__block-markers">
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>JavaScript (basic)</li>
+              <li>Git (basic)</li>
+            </ul>
+          </section>
+          <section class="container__block" id="Education">
+            <h2>Education</h2>
+            <ul class="container__block-markers">
+              <li>
+                University:
+                <a href="https://www.npi-tu.ru/"
+                  >Platov South-Russian State Polytechnic University (NPI)</a
+                >
+              </li>
+              <li>
+                <a href="https://htmlacademy.ru/profile/oldschool"
+                  >HTML Academy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.codewars.com/users/rndm-sklz">Codewars</a>
+              </li>
+              <li><a href="https://codepen.io/rndm-sklz">Codepen</a></li>
+            </ul>
+          </section>
+          <section class="container__block" id="contacts">
+            <h2>Contacts</h2>
+            <ul class="container__block-markers">
+              <li>Gender: Male</li>
+              <li>City: Rostov-on-Don</li>
+              <li>
+                E-mail:
+                <a href="mailto:gerasimov-am@yandex.ru"
+                  >gerasimov-am@yandex.ru</a
+                >
+              </li>
+              <li>
+                Telegram:
+                <a href="https://telegram.me/Gerasimov_Andrew"
+                  >Gerasimov_Andrew</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="container__block">
+            <h2>English</h2>
+            <ul class="container__block-markers">
+              <li>
+                English: Currently at <b>A1</b> level (Checked at
+                <a href="https://www.efset.org/">efset</a> test)
+              </li>
+              <li>Russian: Native</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/rndm-sklz">rndm-sklz</a>
+      <p>2022</p>
+      <a href="https://rs.school/js/">
+        <img
+          class="logo"
+          src="./assets/img/rs_school_logo.svg"
+          alt="Rs-school logo"
+        />
+      </a>
+    </footer>
+    <script src="./js/prism_js.js"></script>
+  </body>
 </html>
